@@ -2,13 +2,13 @@
 {% load static %}
 
 {% block content %}
- <div class="container ps-3 pt-sm-5">
+<div class="container ps-3 pt-sm-5">
     <h1 class="fw-bold ">Your Solution in Machinery and Internet</h1>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
         dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-         sit amet. et clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
-    
+        sit amet. et clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+
     <div class="pt-5">
         <div class="d-flex justify-content-between">
             <h2>Products</h2>
@@ -16,26 +16,65 @@
         </div>
         <div class="card mb-3 p-3 rounded" style="background-color: #1A1A1A;">
             <div class="row g-0">
-              <div class="col-md-4">
-                <img src=" {% static 'images/product.png'%} " class="img-fluid rounded-start" alt="Product Image">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Product Title</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                </p>
-                <div class="d-flex justify-content-end">
-                    <a href="#" class="d-flex justify-self-end btn btn-dark px-3" style="background-color:#B89E8D;">Details</a>
+                <div class="col-md-4">
+                    <img src=" {% static 'images/product.png'%} " class="img-fluid rounded-start" alt="Product Image">
                 </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Product Title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                            Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+                            takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <a href="#" class="d-flex justify-self-end btn btn-dark px-3"
+                                style="background-color:#B89E8D;">Details</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
+        </div>
+        <div class="d-flex justify-content-between pt-5">
+            <h2>Services</h2>
+            <a href="#" class="fw-bold text-decoration-none" style="color:#B89E8D"> More Services > </a>
+        </div>
+        <div class="d-flex">
+            <div class="card text-bg-dark">
+                <img src="{% static 'images/cad-design.png'%}" class="card-img bg-gradient" alt="...">
+                <div class="card-img-overlay">
+                    <div class="d-flex flex-column align-items-end">
+                      <h5 class="card-title d-flex flex-column justify-self-end">Card title</h5>
+                    </div>
+                </div>
+              </div>
+              <div class="card text-bg-dark">
+                <img src="{% static 'images/cad-design.png'%}" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark">
+                <img src="{% static 'images/cad-design.png'%}" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark">
+                <img src="{% static 'images/cad-design.png'%}" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Last updated 3 mins ago</p>
+                </div>
+              </div>
         </div>
     </div>
 </div>
 {% endblock content %}
-
