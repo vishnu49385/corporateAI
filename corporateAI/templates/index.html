@@ -1,6 +1,41 @@
 {% extends 'layouts/base.html' %}
+{% load static %}
 
 {% block content %}
- <div></div>
+ <div class="container ps-3 pt-sm-5">
+    <h1 class="fw-bold ">Your Solution in Machinery and Internet</h1>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+         sit amet. et clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit.</p>
+    
+    <div class="pt-5">
+        <div class="d-flex justify-content-between">
+            <h2>Products</h2>
+            <a href="#" class="fw-bold text-decoration-none" style="color:#B89E8D"> More Products > </a>
+        </div>
+        <div class="card mb-3 p-3 rounded" style="background-color: #1A1A1A;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src=" {% static 'images/product.png'%} " class="img-fluid rounded-start" alt="Product Image">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Product Title</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                    sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                </p>
+                <div class="d-flex justify-content-end">
+                    <a href="#" class="d-flex justify-self-end btn btn-dark px-3" style="background-color:#B89E8D;">Details</a>
+                </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
 
