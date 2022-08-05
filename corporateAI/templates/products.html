@@ -1,0 +1,24 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container p-5">
+    <div class="fs-5 fw-bold mb-5">Products</div>
+    <div class="row d-flex pb-3 gap-3">
+        <div class="text-bg-dark col-sm pb-3  rounded">
+            <img src="{% static 'images/cad-design.png'%}" class="card-img" width="" alt="...">
+            <h6 class="pt-3">CARBON CAPTURE EQUIPMENT</h6>
+        </div>
+        <div class="text-bg-dark col-sm pb-3 rounded">
+            <img src="{% static 'images/graphic-design.png'%}" class="card-img bg-gradient" alt="...">
+            <h6 class="pt-3">WASTE INCINERATOR</h6>
+        </div>
+        <div class="text-bg-dark col-sm pb-3 rounded">
+            <img src="{% static 'images/product-development.png'%}" class="card-img bg-gradient" alt="...">
+            <h6 class="pt-3">QUANTITATIVE ENERGY EQUIPMENT</h6>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

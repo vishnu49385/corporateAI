@@ -5,13 +5,13 @@ def index(request):
     return render(request, 'index.html')
 
 def products(request):
-    pass
+    return render(request, 'products.html')
 
 def services(request):
-    pass
+    return render(request, 'services.html')
 
 def contact(request):
-    pass
+    return render(request, 'contact.html')
 
 def about(request):
-    pass
+    return render(request, 'about.html')
