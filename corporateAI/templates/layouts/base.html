@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Poppins&display=swap" rel="stylesheet">
   </head>
-  <body style="background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg);">
+  <body>
     <main class="bg-dark text-white" style="font-family: 'Poppins', sans-serif;">
         <div class="container lh-1 p-3" >
           <div class="icon-square d-inline-flex align-items-baseline justify-content-center flex-shrink-0 ">
@@ -41,27 +41,50 @@
         <div class="container mb-4 col-sm-8">
           <div class="d-flex justify-content-center">
             <ul class="nav nav-pills">
-              <li class="nav-item"><a href="{% url 'index' %}" 
-                class="nav-link rounded-pill {% if page == 'index'%} active{%endif%}" 
-                style="background: #B89E8D" aria-current="page">Home</a></li>
+              <li class="nav-item">
+                <a href="{% url 'index' %}" 
+                  class="nav-link rounded-pill text-light{% if page == 'index'%} active{%endif%}" 
+                  style="{% if page == 'index'%} background: #B89E8D {%endif%}" 
+                  aria-current="{% if page == 'index' %}page{% endif %}">
+                  Home
+                </a>
+              </li>
 
               <li class="nav-item"><a href="{% url 'products' %}" 
-                class="nav-link text-bg-dark {% if page == 'products'%} active{%endif%}"
-                style="background: #B89E8D"
-                >Products</a></li>
+                <a href="{% url 'products' %}" 
+                  class="nav-link rounded-pill text-light{% if page == 'products'%} active{%endif%}" 
+                  style="{% if page == 'products'%} background: #B89E8D {%endif%}" 
+                  aria-current="{% if page == 'products' %}page{% endif %}">
+                  Products
+                </a>
+              </li>
 
               <li class="nav-item"><a href="{% url 'services' %}" 
-                class="nav-link text-bg-dark {% if page == 'services'%} active{%endif%}">Services</a></li>
+                <a href="{% url 'services' %}" 
+                  class="nav-link rounded-pill text-light{% if page == 'services'%} active{%endif%}" 
+                  style="{% if page == 'services'%} background: #B89E8D {%endif%}" 
+                  aria-current="{% if page == 'services' %}page{% endif %}">
+                  Services
+                </a>
+              </li>
 
               <li class="nav-item"><a href="{% url 'contact' %}" 
-                class="nav-link text-bg-dark {% if page == 'contact'%} active{%endif%}"
-                style="background: #B89E8D"
-                >Contact Us</a></li>
+                <a href="{% url 'contact' %}" 
+                  class="nav-link rounded-pill text-light{% if page == 'contact'%} active{%endif%}" 
+                  style="{% if page == 'contact'%} background: #B89E8D {%endif%}" 
+                  aria-current="{% if page == 'contact' %}page{% endif %}">
+                  Contact us 
+                </a>
+              </li>
 
-              <li class="nav-item"><a href="{% url 'about' %}" 
-                class="nav-link text-bg-dark {% if page == 'about'%} active{%endif%}"
-                style="background: #B89E8D"
-                >About Us</a></li>
+              <li class="nav-item">
+                <a href="{% url 'about' %}" 
+                  class="nav-link rounded-pill text-light{% if page == 'about'%} active{%endif%}" 
+                  style="{% if page == 'about'%} background: #B89E8D {%endif%}" 
+                  aria-current="{% if page == 'about' %}page{% endif %}">
+                  About us
+                </a>
+              </li>
             </ul>
           </div>
         </div>
