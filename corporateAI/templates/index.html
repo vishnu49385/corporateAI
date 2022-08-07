@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<div class="container ps-3 pt-sm-5">
+<div class="container ps-3 pt-sm-5 col-sm-11">
   <h1 class="fw-bold fs-4">Your Solution in Machinery and Internet</h1>
   <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
     ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
@@ -12,14 +12,14 @@
   <div class="pt-5">
     <div class="d-flex justify-content-between">
       <h2>Products</h2>
-      <a href="#" class="fw-bold text-decoration-none" style="color:#B89E8D"> More Products > </a>
+      <a href="{% url 'products' %}" class="fw-bold text-decoration-none" style="color:#B89E8D"> More Products > </a>
     </div>
-    <div class="card mb-3 p-3 rounded" style="background-color: #1A1A1A;">
+    <div class="card p-3 rounded" style="background-color: #1A1A1A;">
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src=" {% static 'images/product.png'%} " class="img-fluid rounded-start" alt="Product Image">
+        <div class="col-md-3">
+          <img src=" {% static 'images/product.png'%} " class="img-fluid rounded-start" width="200rem" alt="Product Image">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
           <div class="card-body">
             <h5 class="card-title">Product Title</h5>
             <p class="card-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
@@ -30,7 +30,7 @@
               takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
             <div class="d-flex justify-content-end">
-              <a href="#" class="d-flex justify-self-end btn btn-dark px-3"
+              <a href="{% url 'cce' %}" class="d-flex justify-self-end btn btn-dark px-3"
                 style="background-color:#B89E8D;">Details</a>
             </div>
           </div>
@@ -39,33 +39,33 @@
     </div>
     <div class="d-flex justify-content-between mt-5">
       <h2>Services</h2>
-      <a href="#" class="fw-bold text-decoration-none" style="color:#B89E8D"> More Services > </a>
+      <a href="{% url 'services' %}" class="fw-bold text-decoration-none" style="color:#B89E8D"> More Services > </a>
     </div>
     <div class="row d-flex pb-3">
-      <div class="card text-bg-dark col-sm pb-3">
+      <a class="card text-bg-dark col-sm pb-3" href="{% url 'cad' %}">
         <img src="{% static 'images/cad-design.png'%}" class="card-img" alt="...">
         <div class="card-img-overlay d-flex flex-column justify-content-end">
           <h5 class="card-title p-3">CAD DESIGN</h5>
         </div>
-      </div>
-      <div class="card text-bg-dark col-sm pb-3">
+      </a>
+      <a class="card text-bg-dark col-sm pb-3" href="#">
         <img src="{% static 'images/ui-ux.png'%}" class="card-img bg-gradient" alt="...">
         <div class="card-img-overlay d-flex flex-column justify-content-end">
           <h5 class="card-title p-3">UI UX DESIGN</h5>
         </div>
-      </div>
-      <div class="card text-bg-dark col-sm pb-3">
+      </a>
+      <a class="card text-bg-dark col-sm pb-3" href="{% url 'graphic-design' %}">
         <img src="{% static 'images/graphic-design.png'%}" class="card-img bg-gradient" alt="...">
         <div class="card-img-overlay d-flex flex-column justify-content-end">
           <h5 class="card-title p-3">GRAPHIC DESIGN</h5>
         </div>
-      </div>
-      <div class="card text-bg-dark col-sm pb-3">
+      </a>
+      <a class="card text-bg-dark col-sm pb-3" href="{% url 'cce' %}">
         <img src="{% static 'images/product-development.png'%}" class="card-img bg-gradient" alt="...">
         <div class="card-img-overlay d-flex flex-column justify-content-end">
           <h5 class="card-title p-3">PRODUCT DEVELOPMENT</h5>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>
