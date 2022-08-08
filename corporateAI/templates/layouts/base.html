@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Poppins&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <main class="bg-dark text-white" style="font-family: 'Poppins', sans-serif;">
+  <body class="grad">
+    <main class="text-white" style="font-family: 'Poppins', sans-serif;">
         <div class="container lh-1 p-3" >
           <div class="icon-square d-inline-flex align-items-baseline justify-content-center flex-shrink-0 ">
             <a href="{% url 'index' %}">
@@ -94,7 +94,7 @@
 
 
         <div class="p-3" style="background-color:#2A2A2A" >
-          <footer class="py-5">
+          <footer class="py-5 ms-sm-5">
             <div class="row">
               <div class="col-6 col-md-2 mb-3">
                 <a href="{% url 'services' %}" class="text-decoration-none">
@@ -141,7 +141,11 @@
   html {
   font-size: 12px;
 }
-
+  .grad { 
+    background: linear-gradient(rgba(0,0,0,0.85), rgba(0, 0, 0, 1)),
+    url('{% static "images/background.png" %}') no-repeat center center fixed; 
+  }
+  
   @media only screen and (max-width: 400px) {
     html {
       font-size: 16px;

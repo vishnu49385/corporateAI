@@ -3,21 +3,27 @@
 
 {% block content %}
 <div class="container p-5">
-    <div class="fs-5 fw-bold mb-5">Products</div>
-    <div class="row d-flex pb-3 gap-3">
-        <div class="text-bg-dark col-sm pb-3  rounded">
-            <img src="{% static 'images/cad-design.png'%}" class="card-img" width="" alt="...">
-            <h6 class="pt-3">CARBON CAPTURE EQUIPMENT</h6>
-        </div>
-        <div class="text-bg-dark col-sm pb-3 rounded">
-            <img src="{% static 'images/graphic-design.png'%}" class="card-img bg-gradient" alt="...">
-            <h6 class="pt-3">WASTE INCINERATOR</h6>
-        </div>
-        <div class="text-bg-dark col-sm pb-3 rounded">
-            <img src="{% static 'images/product-development.png'%}" class="card-img bg-gradient" alt="...">
-            <h6 class="pt-3">QUANTITATIVE ENERGY EQUIPMENT</h6>
-        </div>
-    </div>
+    <div class="fs-5 fw-bold">Products</div>
+    <div class="row d-flex pb-3 gap-5">
+        <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'cad' %}">
+          <img src="{% static 'images/cad-design.png'%}" class="card-img" alt="...">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title p-3">CARBON CAPTURE EQUIPMENT</h5>
+          </div>
+        </a>
+        <a class="card text-bg-dark col-sm p-0 m-0" href="#">
+          <img src="{% static 'images/ui-ux.png'%}" class="card-img" alt="...">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title p-3">WASTE INCINERATOR</h5>
+          </div>
+        </a>
+        <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'graphic-design' %}">
+          <img src="{% static 'images/graphic-design.png'%}" class="card-img bg-gradient" alt="...">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title p-3">QUANTITATIVE ENERY EQUIPMENT</h5>
+          </div>
+        </a>
+      </div>
 </div>
 
 
