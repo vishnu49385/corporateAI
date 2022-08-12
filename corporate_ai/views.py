@@ -1,4 +1,3 @@
-from multiprocessing import context
 from django.shortcuts import render
 
 
@@ -16,7 +15,7 @@ def products(request):
 
 def cad_detail(request):
     context = {
-        "page":"products",
+        "page":"services",
     }
     return render(request, 'cad.html',context)
 
@@ -28,9 +27,21 @@ def cce_detail(request):
 
 def graphic_detail(request):
     context = {
-        "page":"products",
+        "page":"services",
     }
     return render(request, 'graphic-design.html',context)
+
+def uiux_detail(request):
+    context = {
+        "page":"services",
+    }
+    return render(request, 'ui-ux.html',context)
+
+def product_detail(request):
+    context = {
+        "page":"services",
+    }
+    return render(request, 'product-detail.html',context)
 
 def services(request):
     context = {
