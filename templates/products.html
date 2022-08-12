@@ -3,30 +3,30 @@
 
 {% block content %}
 <div class="container p-5">
-    <div class="fs-5 fw-bold mb-3">Products</div>
-    <div class="col-sm-8 ">
-        <div class="row d-flex pb-3 gap-5">
-            <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'cce' %}">
-              <img src="{% static 'images/cad-design.png'%}" class="card-img" alt="...">
-              <div class="card-img-overlay d-flex flex-column justify-content-end">
-                <h5 class="card-title p-3">CARBON CAPTURE EQUIPMENT</h5>
-              </div>
-            </a>
-            <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'cce' %}">
-              <img src="{% static 'images/ui-ux.png'%}" class="card-img" alt="...">
-              <div class="card-img-overlay d-flex flex-column justify-content-end">
-                <h5 class="card-title p-3">WASTE INCINERATOR</h5>
-              </div>
-            </a>
-            <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'cce' %}">
-              <img src="{% static 'images/graphic-design.png'%}" class="card-img bg-gradient" alt="...">
-              <div class="card-img-overlay d-flex flex-column justify-content-end">
-                <h5 class="card-title p-3">QUANTITATIVE ENERY EQUIPMENT</h5>
-              </div>
-            </a>
-        </div>
+    <div class="fs-5 fw-bold mb-5">ALL SERVICES</div>
+    <div class="col-sm-10">
+    <div class="row d-flex pb-3 gap-5">
+        <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'cce' %}">
+          <img src="{% static 'images/cce-lng.png'%}" class="card-img" alt="...">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title p-3">Carbon Capture Equipment</h5>
+          </div>
+        </a>
+        <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'waste-incinerator' %}">
+          <img src="{% static 'images/waste-incinerator.png'%}" class="card-img" alt="...">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title p-3">Waste Incinerator</h5>
+          </div>
+        </a>
+        <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'qee' %}">
+          <img src="{% static 'images/qee.png'%}" class="card-img bg-gradient" alt="...">
+          <div class="card-img-overlay d-flex flex-column justify-content-end">
+            <h5 class="card-title p-3">Quantitative Energy Equipment</h5>
+          </div>
+        </a>
+      </div>
     </div>
-</div>
+    </div>
 
 
 {% endblock content %}

@@ -37,6 +37,18 @@ def uiux_detail(request):
     }
     return render(request, 'ui-ux.html',context)
 
+def qee_detail(request):
+    context = {
+        "page":"products",
+    }
+    return render(request, 'qee.html',context)
+
+def incinerator_detail(request):
+    context = {
+        "page":"products",
+    }
+    return render(request, 'incinerator.html',context)
+
 def product_detail(request):
     context = {
         "page":"services",
