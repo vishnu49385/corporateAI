@@ -1,0 +1,25 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container col-sm-8 my-5">
+    <h5 class="fw-bold">Waste Incinerator</h5>
+    <div class="row d-flex pb-3 gap-sm-5">
+        <a class="card text-bg-dark col m-0 p-0" href="#">
+          <img src="{% static 'images/waste-incinerator.png'%}" class="card-img" alt="...">
+        </a>
+        <a class="card text-bg-dark col m-0 p-0" href="#">
+          <img src="{% static 'images/waste-incinerator-1.png'%}" class="card-img" alt="...">
+        </a>
+        <a class="card text-bg-dark col m-0 p-0" href="#">
+          <img src="{% static 'images/waste-incinerator-2.png'%}" class="card-img" alt="...">
+        </a>
+    </div>
+    <p class="my-3">
+      carbon capture machine 
+    </p>
+    <div class="d-flex justify-content-end">
+        <a href="mailto:contact@arabindustries.tech" class="btn btn-sm px-3 btn-bg-dark" style="background-color:#B89E8D">Connect with us</a>
+    </div>
+</div>
+{% endblock content %}
