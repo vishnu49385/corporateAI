@@ -4,6 +4,7 @@
 {% block content %}
 <div class="container p-5">
     <div class="fs-5 fw-bold mb-5">ALL SERVICES</div>
+    <div class="col-sm-10">
     <div class="row d-flex pb-3 gap-5">
         <a class="card text-bg-dark col-sm p-0 m-0" href="{% url 'cad' %}">
           <img src="{% static 'images/cad-design.png'%}" class="card-img" alt="...">
@@ -30,7 +31,8 @@
           </div>
         </a>
       </div>
-</div>
+    </div>
+    </div>
 
 
 {% endblock content %}
